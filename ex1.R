@@ -1,7 +1,7 @@
 #3.1
-x14 <- c(28000, 84000, 4200)
+x14 <- c(28000, 84000, 42000)
 y14 <- c(70, 252, 21)
-proportions <- income_2014/donations
+proportions <- y14/x14
 print(proportions)
 
 #3.2
@@ -12,8 +12,12 @@ mean(proportions) -> betahat
 print(betahat)
 
 #3.4
-yhat<- 5000*betahat
+yhat<- 50000*betahat
 yhat
+
+y5percent<- 50000*0.5
+y5percent
+#Our betahat is much smaller than the beta=0,5%
 
 #3.5
 x12<- c(30000, 84000, 40000)
